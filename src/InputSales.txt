@@ -1,0 +1,5 @@
+Minsk: 100
+POlotsk: 1.2
+NEw York: No data available
+Brest : 45
+Gomel: No data
