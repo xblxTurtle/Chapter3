@@ -9,7 +9,7 @@ public static void main(String args[])
 	//breakIntoWords();
 	//aggregateSales();
 	//MaxDivisorsImproved();
-	//BirthdaysImproved();
+	BirthdaysImproved();
 }
 public static void BirthdaysImproved()
 {

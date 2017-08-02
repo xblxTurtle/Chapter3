@@ -1,3 +1,4 @@
+package GraphicPackage;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -10,7 +11,7 @@ import javax.swing.*;
  *  the program as noted below. Note that if you change the name of the
  *  class, you must also change the name in the main() routine!
  */
-public class SimpleAnimationStarter extends JPanel implements ActionListener {
+public class SimpleCyclicAnimation extends JPanel implements ActionListener {
 
     /**
      * Draws one frame of an animation. This subroutine is called re
@@ -21,26 +22,20 @@ public class SimpleAnimationStarter extends JPanel implements ActionListener {
      * The sizes and positions of the rectangles that are drawn depend
      * on the frame number, giving the illusion of motion.
      */
-    public void drawFrame(Graphics g, int frameNumber, int width, int height) {
+    public void drawFrame(Graphics g, int frameNumber, int width, int height) 
+    	{
         
         /* NOTE:  To get a different animation, just erase the contents of this 
          * subroutine and substitute your own.  If you don't fill the picture
          * with some other color, the background color will be white.  The sample
          * code here just shows the frame number.
          */
-        for (int i=0; i<8; i++)
-        {
-	        	for (int k=0; k<8; k++)
-	        	{
-	        		if ((i % 2)==0 ^ (k % 2)==0) 
-	        			g.setColor(Color.WHITE);
-	        		else
-	        			g.setColor(Color.BLACK);
-	        		g.fillRect(i*50, k*50, 50, 50);
-	        	}
-        }
-
+    		int cyclicFrameNumber = frameNumber % 10;
+    		g.setColor(Color.BLACK);
+        g.fillRect(cyclicFrameNumber * 10, cyclicFrameNumber * 10 , 50, 50);
     }
+
+    
     
     //------ Implementation details: DO NOT EXPECT TO UNDERSTAND THIS ------
     
@@ -56,7 +51,7 @@ public class SimpleAnimationStarter extends JPanel implements ActionListener {
          * NOTE: If you change the name of this class, you must change
          * the name of the class in the next line to match!
          */
-        SimpleAnimationStarter drawingArea = new SimpleAnimationStarter();
+        SimpleCyclicAnimation drawingArea = new SimpleCyclicAnimation();
         
         drawingArea.setBackground(Color.WHITE);
         window.setContentPane(drawingArea);
