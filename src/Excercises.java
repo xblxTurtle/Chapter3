@@ -9,6 +9,7 @@ public static void main(String args[])
 	//breakIntoWords();
 	//aggregateSales();
 	//MaxDivisorsImproved();
+	
 	BirthdaysImproved();
 }
 public static void BirthdaysImproved()
@@ -20,6 +21,7 @@ public static void BirthdaysImproved()
 	while (!condition1 || !condition2 || !condition3)
 	{
 		count ++;
+		
 		birthday = (int)(Math.random()*365)+1;
 		birthdays[birthday]++;
 		if (birthdays[birthday] == 1)
