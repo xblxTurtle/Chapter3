@@ -9,8 +9,12 @@ public static void main(String args[])
 	//breakIntoWords();
 	//aggregateSales();
 	//MaxDivisorsImproved();
-	
 	BirthdaysImproved();
+	NewStory();
+}
+public static void NewStory()
+{
+	
 }
 public static void BirthdaysImproved()
 {
