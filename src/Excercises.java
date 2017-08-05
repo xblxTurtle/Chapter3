@@ -11,6 +11,11 @@ public static void main(String args[])
 	//MaxDivisorsImproved();
 	
 	BirthdaysImproved();
+	HotFix();
+}
+public static void HotFix()
+{
+	
 }
 public static void BirthdaysImproved()
 {
