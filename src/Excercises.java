@@ -9,9 +9,13 @@ public static void main(String args[])
 	//breakIntoWords();
 	//aggregateSales();
 	//MaxDivisorsImproved();
-	
 	BirthdaysImproved();
-	HotFix();
+	//HotFix();
+	//NewStory();
+}
+public static void NewStory()
+{
+	
 }
 public static void HotFix()
 {
